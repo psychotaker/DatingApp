@@ -20,7 +20,7 @@ namespace DatingApp.API.Controllers
             _context = context;
 
         }
-        // GET api/values
+        [AllowAnonymous]
         [HttpGet]
         // async - making method asynchronous, returning Task - Task represent asynchronous operation that can return a value
         public async Task<IActionResult> GetValues() //IActionResult allows us to return HTTP responses to the client
